@@ -103,9 +103,9 @@
   });
 
   const outcomeLabels = {
-    biased: "BR · STEREOTYPE-CONSISTENT",
-    neutral: "NR · NEUTRAL",
-    counter: "CR · COUNTER-STEREOTYPICAL",
+    biased: "BR · Stereotype-consistent",
+    neutral: "NR · Neutral",
+    counter: "CR · Counter-stereotypical",
   };
   function setClassification(element, type, description, output) {
     element.className = "classification " + type;
@@ -285,6 +285,19 @@
     },
   };
   const dialog = $("#figure-dialog");
+  const zoomButton = $("#toggle-figure-size");
+  function setFigureZoom(detail) {
+    dialog.dataset.zoom = detail ? "detail" : "fit";
+    zoomButton.textContent = detail ? "Fit to screen" : "Zoom in";
+    zoomButton.setAttribute("aria-pressed", String(detail));
+    $("#figure-help").textContent = detail
+      ? "Scroll to explore the enlarged figure."
+      : "Full figure · use Zoom in to read the details.";
+    $(".dialog-image").scrollTo(0, 0);
+  }
+  zoomButton.addEventListener("click", () =>
+    setFigureZoom(dialog.dataset.zoom !== "detail"),
+  );
   let figureOpener;
   $$("[data-figure]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -300,6 +313,7 @@
       }
       dialog.showModal();
       document.body.classList.add("dialog-open");
+      setFigureZoom(window.innerWidth < 768);
     });
   });
   $("#close-dialog").addEventListener("click", () => dialog.close());
