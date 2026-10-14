@@ -46,9 +46,9 @@ python3 -m http.server 8000
 
 ## 논문과 데이터 공개 후
 
-1. `index.html`의 Paper 안내에 공식 논문 URL을 추가합니다. 현재 제공된 자료에는 최종 논문 PDF나 출판 URL이 없어 공개 예정으로 표시합니다.
-2. 실제 공개 시 Code & data의 공개 예정 문구를 수정합니다.
-3. 공식 BibTeX가 나오면 `#bibtex`와 citation 메타데이터를 갱신합니다. 현재 BibTeX는 제공된 저자·제목·학회 정보에 기반한 임시 항목이며 DOI나 페이지 번호를 추정하지 않습니다.
+1. 상단 Paper 버튼은 링크 없이 비활성 상태로 표시합니다. 공식 논문 URL이 나오면 `button.button-paper`를 실제 URL이 있는 링크로 교체하고 `Coming soon` 문구를 제거합니다.
+2. Code와 Poster는 상단에서 바로 열 수 있습니다. 하단의 자료 카드와 원본 그림 PDF 링크 목록은 표시하지 않습니다.
+3. Citation은 요청에 따라 빈칸으로 유지합니다. 공식 BibTeX가 준비되면 `#bibtex`에 추가합니다. 내용이 있을 때만 복사 버튼이 자동으로 표시됩니다.
 4. 차트 수치를 변경하면 `static/js/data.js`와 `static/files/scene-results.csv`를 함께 수정합니다. 전체 벤치마크 결과와 KoBBQ 하위집합의 결과는 다른 실험입니다.
 
 ## 배포
@@ -66,8 +66,9 @@ git push origin project_page
 - 모바일 메뉴 및 내부 섹션 링크
 - 두 과제 탭, 키보드 좌우 방향키, 네 가지 인물 속성 조합, 세 가지 플롯 선택
 - BR / NR / CR 차트와 모델 선택, 원본 표와 CSV의 일치
-- 그림 확대, Escape로 닫기, 포스터·원본 PDF 열기
-- BibTeX 복사 및 클립보드를 사용할 수 없는 환경의 텍스트 선택 대안
+- 그림 확대, Escape로 닫기, 상단 Code·Poster 링크, Paper 비활성 상태
+- 빈 Citation과 숨겨진 복사 버튼 (공식 인용문이 추가되면 복사 기능 활성화)
+- 본문 데스크톱 18px / 모바일 17px, 저자·모델명 16px, 차트 수치 14px
 - 320px부터 1920px까지 가로 넘침 여부, 감소된 모션 설정
 
 페이지 디자인과 코드는 이 프로젝트를 위해 작성했습니다. Nerfies의 배포 방식을 참고했으며 Nerfies의 코드를 복사하지 않았습니다. DM Sans와 Manrope는 SIL Open Font License로 배포되며 라이선스는 `static/fonts/`에 있습니다. 논문 그림과 포스터의 권리는 원저자에게 있습니다.
