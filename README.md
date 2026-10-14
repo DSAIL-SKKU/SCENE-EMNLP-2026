@@ -1,4 +1,9 @@
 # SCENE: A Scenario Completion Benchmark for Measuring Social Bias in Large Language Models
+
+**[Project page](https://dsail-skku.github.io/SCENE-EMNLP-2026/)** · [Website maintenance guide](WEBSITE.md) · [Code and data branch](https://github.com/DSAIL-SKKU/SCENE-EMNLP-2026/tree/main)
+
+This is the `project_page` branch, which serves the static research website through GitHub Pages.
+
 Official repository for **SCENE: A Scenario Completion Benchmark for Measuring Social Bias in Large Language Models**, accepted to **Findings of EMNLP 2026**.
 
 > **Release status:** The detailed code, benchmark data, and evaluation scripts will be uploaded in a future update.
