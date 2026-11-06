@@ -53,11 +53,11 @@ python3 -m http.server 8000
 - Q2는 과제 맥락과 출력 제약을 구분하며 MCQ 비교 수치가 KoBBQ 하위집합임을 명시합니다.
 - 본문은 데스크톱 20px / 모바일 19px입니다. 긴 설명은 행 길이를 제한하고 보조 문구와 그림 설명도 16–17px 이상으로 표시합니다.
 
-## 논문과 데이터 공개 후
+## 자료 링크와 인용
 
 1. 상단 Paper 버튼은 [ACL Anthology 논문 페이지](https://aclanthology.org/2026.findings-emnlp.1092/)를 새 탭으로 엽니다.
 2. Code와 Poster는 상단에서 바로 열 수 있습니다. 하단의 자료 카드와 원본 그림 PDF 링크 목록은 표시하지 않습니다.
-3. Citation은 요청에 따라 빈칸으로 유지합니다. 공식 BibTeX가 준비되면 `#bibtex`에 추가합니다. 내용이 있을 때만 복사 버튼이 자동으로 표시됩니다.
+3. Citation의 `#bibtex`에는 [ACL Anthology 공식 BibTeX](https://aclanthology.org/2026.findings-emnlp.1092.bib)를 표시합니다. 내용이 있으면 `Copy BibTeX` 버튼이 자동으로 활성화됩니다.
 4. 차트 수치를 변경하면 `static/js/data.js`와 `static/files/scene-results.csv`를 함께 수정합니다. 전체 벤치마크 결과와 KoBBQ 하위집합의 결과는 다른 실험입니다.
 
 ## 배포
@@ -76,7 +76,7 @@ git push origin project_page
 - 두 과제 탭, 키보드 좌우 방향키, 네 가지 인물 속성 조합, 세 가지 플롯 선택
 - BR / NR / CR 차트와 모델 선택, 원본 표와 CSV의 일치
 - 그림 확대, Escape로 닫기, 상단 Paper·Code·Poster 링크
-- 빈 Citation과 숨겨진 복사 버튼 (공식 인용문이 추가되면 복사 기능 활성화)
+- 공식 BibTeX 표시와 복사 버튼, 모바일에서 인용 영역의 가로 스크롤
 - 본문 데스크톱 20px / 모바일 19px, 모델명 18px, 차트 수치 16px
 - 클릭 없이 표시되는 네 원본 그림, 모바일 과제 패널 배치와 그림 확대/축소
 - 320px부터 1920px까지 가로 넘침 여부, 감소된 모션 설정
