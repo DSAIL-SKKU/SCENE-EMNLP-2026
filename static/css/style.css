@@ -228,9 +228,9 @@ sup {
   box-shadow: 0 2px 8px #152c3814;
 }
 .button-paper {
-  background: #e8edf1;
-  border-color: #c2ccd4;
-  color: #40515e;
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
 }
 .button-status {
   font-size: 14px;
@@ -2200,8 +2200,8 @@ body.dialog-open {
     padding: 11px 14px;
     font-size: 17px;
   }
-  .button-paper {
-    flex-basis: 100%;
+  .hero-actions .button-paper {
+    flex: 1 0 100%;
   }
   .hero-actions a {
     flex: 1;

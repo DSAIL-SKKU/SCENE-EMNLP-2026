@@ -55,7 +55,7 @@ python3 -m http.server 8000
 
 ## 논문과 데이터 공개 후
 
-1. 상단 Paper 버튼은 링크 없이 비활성 상태로 표시합니다. 공식 논문 URL이 나오면 `button.button-paper`를 실제 URL이 있는 링크로 교체하고 `Coming soon` 문구를 제거합니다.
+1. 상단 Paper 버튼은 [ACL Anthology 논문 페이지](https://aclanthology.org/2026.findings-emnlp.1092/)를 새 탭으로 엽니다.
 2. Code와 Poster는 상단에서 바로 열 수 있습니다. 하단의 자료 카드와 원본 그림 PDF 링크 목록은 표시하지 않습니다.
 3. Citation은 요청에 따라 빈칸으로 유지합니다. 공식 BibTeX가 준비되면 `#bibtex`에 추가합니다. 내용이 있을 때만 복사 버튼이 자동으로 표시됩니다.
 4. 차트 수치를 변경하면 `static/js/data.js`와 `static/files/scene-results.csv`를 함께 수정합니다. 전체 벤치마크 결과와 KoBBQ 하위집합의 결과는 다른 실험입니다.
@@ -75,7 +75,7 @@ git push origin project_page
 - 모바일 메뉴 및 내부 섹션 링크
 - 두 과제 탭, 키보드 좌우 방향키, 네 가지 인물 속성 조합, 세 가지 플롯 선택
 - BR / NR / CR 차트와 모델 선택, 원본 표와 CSV의 일치
-- 그림 확대, Escape로 닫기, 상단 Code·Poster 링크, Paper 비활성 상태
+- 그림 확대, Escape로 닫기, 상단 Paper·Code·Poster 링크
 - 빈 Citation과 숨겨진 복사 버튼 (공식 인용문이 추가되면 복사 기능 활성화)
 - 본문 데스크톱 20px / 모바일 19px, 모델명 18px, 차트 수치 16px
 - 클릭 없이 표시되는 네 원본 그림, 모바일 과제 패널 배치와 그림 확대/축소
