@@ -764,6 +764,15 @@ nav .nav-repo {
 .authors > span {
   white-space: nowrap;
 }
+.authors a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.authors a:hover {
+  color: var(--mint);
+}
 .affiliations {
   display: flex;
   gap: 8px 24px;

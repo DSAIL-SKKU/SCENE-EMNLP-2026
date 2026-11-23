@@ -60,6 +60,8 @@ python3 -m http.server 8000
 3. Citation의 `#bibtex`에는 [ACL Anthology 공식 BibTeX](https://aclanthology.org/2026.findings-emnlp.1092.bib)를 표시합니다. 내용이 있으면 `Copy BibTeX` 버튼이 자동으로 활성화됩니다.
 4. 차트 수치를 변경하면 `static/js/data.js`와 `static/files/scene-results.csv`를 함께 수정합니다. 전체 벤치마크 결과와 KoBBQ 하위집합의 결과는 다른 실험입니다.
 
+저자명은 확인된 개인 홈페이지 또는 소속기관의 소개 페이지로 연결합니다. Minseok Kim은 개인 홈페이지가 없다는 사용자 확인에 따라 링크 없이 표시합니다.
+
 ## 배포
 
 이 브랜치에 변경을 push하면 GitHub Pages가 갱신합니다. 최초 설정은 저장소의 **Settings → Pages → Deploy from a branch → project_page → / (root)** 입니다. `.nojekyll`이 있으므로 Jekyll 처리 없이 정적 파일을 제공합니다.
